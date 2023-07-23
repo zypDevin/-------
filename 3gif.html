@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #484855;
+            margin: 100px auto;
+        }
+
+        [class^=radius] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* transform: translate(-50%, -50%); */
+            border-radius: 50%;
+            border: 1px solid #486caa;
+            animation: move 1s linear infinite;
+        }
+
+        .radius1 {
+            top: 50px;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            animation-duration: 4s;
+        }
+
+        .radius2 {
+            top: 75px;
+            left: 75px;
+            width: 150px;
+            height: 150px;
+            animation-duration: 3s;
+        }
+
+        .radius3 {
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            animation-duration: 2s;
+        }
+
+        [class^=ball] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #48fcff;
+        }
+
+        .ball1 {
+            top: 20px;
+            left: 30px;
+        }
+
+        .ball2 {
+            top: 42px;
+            left: 0;
+        }
+
+        .ball3 {
+            top: 0;
+            left: 25px;
+        }
+
+        .star {
+            position: absolute;
+            top: 130px;
+            left: 130px;
+            width: 40px;
+            height: 40px;
+            background-color: #ffab91;
+            border-radius: 50%;
+        }
+
+        @keyframes move {
+            0% {}
+
+            100% {
+
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="radius1">
+            <div class="ball1"></div>
+        </div>
+        <div class="radius2">
+            <div class="ball2"></div>
+        </div>
+        <div class="radius3">
+            <div class="ball3"></div>
+        </div>
+        <div class="star"></div>
+    </div>
+
+</body>
+
+</html>
